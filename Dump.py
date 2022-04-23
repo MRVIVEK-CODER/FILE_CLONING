@@ -20,14 +20,14 @@ except(ImportError):
 Vivekxd=platform.architecture()[0]
 try:
     if Vivekxd=="64"
-       __import__("Dump").mysecurity()
+       __import__("Dump").login()
     else:
         print(" We have issue to launch script")
         exit()
 except(AttributeError,OSError,KeyError,IOError):
     if Vivekxd == "64bit":
         import Dump
-        Dump mysecurity()
+        Dump.login()
     else:
         print(" We have issue to launch script")
         exit()
